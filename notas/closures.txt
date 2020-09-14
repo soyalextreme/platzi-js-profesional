@@ -1,0 +1,13 @@
+IIFE
+
+Inmidlety Invoque Function Expresion => Funcion que se ejecuta de inmediato 
+
+
+Closures => Formas de tecnicas hacer que nuestras variables no se puedan modificar
+directamente podria ser encapsulando con una funciones de invocacion inmediata
+como los IIFE.
+Creando una funcion que retorne simplemente algunas acciones que nos permitan
+interactuar con la variable. De esta manera la forma de modificar es mas
+segura. Implementando el block scope.
+
+

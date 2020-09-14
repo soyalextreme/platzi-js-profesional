@@ -1,0 +1,52 @@
+
+this
+
+this en el global scope es window
+
+this en el function scope es window excepto si usamos js en estrict mode
+
+Usando
+
+"use strict";
+
+En el caso de usar el modo esctrico el this pasa a ser un objeto vacio algo
+como esto: 
+
+this = {
+}
+
+en el podemos declarar variables atributos y metodos que tengan scope al this.
+
+
+
+
+
+const person = {
+  name = "Alejandro",
+  saludar = function(){
+    console.log(`${this.name}: Hola como estas`)
+  }
+}
+
+Por otro lado tenemos los objetos prototipales.
+
+
+Aqui este pasa a ser el constructor
+
+function Person(name){
+  this.name = name;
+}
+
+
+Definimos un metodo prototipal
+
+Person.prototype.sayHello = function(){
+  console.log(`${this.name}: Say hello!`);
+}
+
+
+Instanciamos la clase con la palabra new
+
+
+cons alex = new Person("Alex");
+alex.sayHello();

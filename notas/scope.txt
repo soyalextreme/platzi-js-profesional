@@ -1,0 +1,30 @@
+Toda variable que definamos fuera de una funcion una clase etc. va a quedar
+dentro del scope global el cual podemos acceder desde window.
+
+Global => window
+
+CDN => bootstrap => ahora declarado globalmente
+
+Cuidado con rescribir las variables globales
+
+
+SCOPE FUNCIONES => solamente viven dentro de las funciones las variables
+
+Funciones globales => setTimeOut 
+
+
+
+Module Scope  => usando en react hace que las variables no sean globales y las
+empaqueta para limitar su uso. Evita errores que sobreescribas una variavle
+
+
+Global Scope 
+Function Scope
+Block Scope
+Module Scope
+
+
+Let respeta el block scope mientras de var no.
+Const de igual manera respeta el block scope pero es constante no puede
+cambiar.
+
