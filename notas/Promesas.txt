@@ -1,0 +1,33 @@
+
+
+Podemos mandar todas las promesas con un loop que itere y vaya mandando todas
+las peticiones una por una.
+
+for(let promise of promises){
+  const response = awit promise();
+}
+
+
+Otra manera es mandar todas las peticiones al mismo tiempo.
+
+
+async function getApiSomething(){
+  const promisesArr = prom.map(id=> getSomething(id));
+  const valuesObj = await Promises.all(promisesArr);
+  return valuesObj;
+}
+
+consideraciones es que si una promesa falla todo fallara dentro del all
+
+
+Otra opcion es solo obtener la promesa mas rapida con el metodo race de
+Promise.
+
+async function getFasterPromise(){
+  const promisesArr = prom.map(id => getPromise(id));
+  const faster = Promise.race(promiseArr);
+  return faster;
+}
+
+
+
