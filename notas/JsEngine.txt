@@ -1,0 +1,16 @@
+Codigo Bytecode es transformado por el parser y el virtual machine.
+
+Profiler => Ve los cambios y busca las optimizaciones dentro del machine code
+
+
+
+V8 => google chrome solo tiene una capa de optimizacion 
+
+Codigo repetitivo se optimiza => exmple funciones que se llamen igual. 
+
+
+Interpreter => Bytecode
+
+Cada navegador tiene sus propias implementaciones y mejoras.
+
+Safari tiene 3 capas de optimizacion.

@@ -1,0 +1,39 @@
+EVENT LOOP
+hace que parece que js es multihilo pero en realidad solo puede hacer una sola
+cosa.
+
+
+JS => usando dos estructuras de datos
+      - stack => rastro de donde esta el programa
+      - Memory Heap => en stack hay un orden y el memory heap es aleatorio es
+        donde se guardan variables y demas cosas usables que sean dinamicas.
+
+
+Tenemos el stack que va ejecutando 1 por uno cada porcion de el codigo hasta
+que entonces se queda vacia y termina el programa.
+Como funciona el stack es que lo ultimo que se agrega es lo primero que sale
+y el orden se veria algo asi.
+
+
+Example:
+    
+
+    console.log
+    func Hello()
+    funct main()
+    anonymous program
+
+
+y cada una de las ejecuciones se tiene que cumplir para pasar a una de un nivel
+mas profundo.
+
+
+Queue es otra estructura de dato que usa para manejar las tareas pendientes
+y las tareas agendadas. Esto debido a que es asyncrono por lo que espera a que
+el stack este vacio para incorporar la tarea.
+
+
+Esa implementacion que esta constantemente preguntando si hay nuevos cambios se
+llama el event loop. Constantemente pregunta al stack y al qeue task si hay
+tareas y si esta vacio el stack para ejecutar la que esta en cola.
+

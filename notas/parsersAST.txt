@@ -1,0 +1,23 @@
+Alejandro Andrade 
+16-09-20
+AST y parsers
+
+
+Todo el codigo JS es traducido por parsers que convierten ese codigo con sus
+identificadores, el scope de las variables y entienden todo el codigo que
+escribimos.
+
+
+Probar los parsers en esta pagina online => https://esprima.org/demo/parse.html
+
+
+
+AST => grafo que representa el programa.
+
+Asi funcionan internamente los preprocesadores y compiladores como Babel
+o Prettier.
+
+AST online
+https://astexplorer.net/
+
+
