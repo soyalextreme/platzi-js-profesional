@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+<script>
+  const levenshtein = require('js-levenshtein');
+  
+  
+  
+  const target = {
+    red: "Rojo",
+    green: "Verde",
+    blue: "Blue"
+  }
+  
+  const handler = {
+    get(obj, prop){
+      if(prop in obj){
+        return obj[prop]
+      }
+  
+      const suggestion = Object.keys(obj).find(key => levenshtein(key, prop) <= 3)
+  
+      if(suggestion){
+        console.log(`${prop} no se encuentra quisiste decir ${sugestion}?`)
+      }
+      return obj[prop]
+    }
+  }
+  
+  
+  const p = new Proxy(handler, target);
+  console.log(p.red)
+  console.log(p)
+
+</script>
+</html>
+
+
+
